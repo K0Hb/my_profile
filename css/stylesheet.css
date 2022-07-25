@@ -1,7 +1,7 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
-} */
+}
 
 @font-face {
   font-family: "IzhitsaRegular";
@@ -9,12 +9,13 @@
   src: url("../fonts/IzhitsaRegular/IzhitsaRegular.eot?#iefix")format("embedded-opentype"),
   url("../fonts/IzhitsaRegular/IzhitsaRegular.woff") format("woff"),
   url("../fonts/IzhitsaRegular/IzhitsaRegular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
 }
 
 
 body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   font-family: sans-serif;
   font-size: 16px;
   color: #404040;
