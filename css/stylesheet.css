@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "IzhitsaRegular";
+  src: url("../fonts/IzhitsaRegular/IzhitsaRegular.eot");
+  src: url("../fonts/IzhitsaRegular/IzhitsaRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/IzhitsaRegular/IzhitsaRegular.woff") format("woff"),
+  url("../fonts/IzhitsaRegular/IzhitsaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #404040;
+  background-color: rgba(211, 191, 147, 0.266);
+}
+
+.container {
+  margin: 2em 40px;
+}
+
+.title {
+  font-family: 'IzhitsaRegular';
+  font-size: 2.4em;
+  margin-bottom: .4em;
+}
+
+.border {
+border: 1px solid #111212;
+}
+
+.title-small {
+  font-size: 1.2em;
+  margin-bottom: .4em;
+}
+
+li {
+  margin-bottom: .6em;
+}
+
+a {
+  color: #33B5FF;
+}
