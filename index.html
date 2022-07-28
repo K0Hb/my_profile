@@ -6,22 +6,25 @@
   <title>CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="./public/ruby.svg">
-  <link href="https://allfont.ru/allfont.css?fonts=fita_poluustav" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="row">
-      <div id="name" class="twelve columns">
-        <h1 class="title">Вячеслав Коновалов</h1>
+    <div class="column">
+      <div id="name">
+        <h1 class="name">Вячеслав Коновалов</h1>
       </div>
-      <div id="developer" class="twelve columns">
-        <h2 class="title-small">Ruby on Rails разработчик</h2>
+      <div id="developer">
+        <h2 class="title">Ruby on Rails разработчик</h2>
       </div>
-      <div id="contacts" class="twelve columns">
+    </div>
+
+    <div class="upper-row-container">
+      <div id="photo">
+        <img src="./public/cv_photo.JPG" alt="фотография для портофолио" class="photo">
+      </div>
+      <div id="contacts" class="icons-info">
         <span class="icon">
           <a href="https://t.me/K00Hb"><img src="public/telegram_icon.png" alt="telegram"></a>
         </span>
@@ -32,17 +35,11 @@
           <a href="mailto:goplit2010.konovalov@yandex.ru"><img src="public/mail_icon.png" alt="mail"></a>
         </span>
       </div>
-    </div>
-
-    <div class="row">
-      <div id="photo" class="six columns">
-        <img src="./public/cv_photo.JPG" alt="фотография для портофолио" class="border" width="400" height="400">
-      </div>
       <div>
-        <div id="general_info" class="six columns">
-          <h4>Местоположение</h4>
+        <div class="block-paragraph" id="general-info">
+          <h4 class="title">Местоположение</h4>
           <p>Россия, Москва</p>
-          <h4 class="title-small">Обо мне</h4>
+          <h4 class="title">Обо мне</h4>
           <p>Умею писать программы в функциональном и ООП стиле.</p>
           <p>Мне нравится узнавать что-то новое и углублять полученые знания.</p>
           <p>Готов к изучению новых технологий</p>
@@ -51,54 +48,66 @@
     </div>
 
     <div class="row">
-      <div id="skills" class="six columns">
-        <h4 class="title-small">Навыки</h4>
-        <ul>
-          <li><strong>ЯП:</strong> Ruby, Python, JS(немного)</li>
-          <li><strong>БД:</strong> SQL(DML-запросы), PostgreSQL, SQLite</li>
-          <li><strong>Фреймворки:</strong> RoR(в процессе обученя), Flask, FastAPI, Django</li>
-          <li><strong>Front-end:</strong> HTML, CSS</li>
-          <li><strong>GIT:</strong> базовые команды, Github</li>
-          <li><strong>DevOps:</strong> Docker, Linux</li>
-        </ul>
+      <div class="row-1-2">
+        <div id="skills" class="block-list">
+          <h4 class="title">Навыки</h4>
+          <ul>
+            <li><strong>ЯП:</strong> Ruby, Python, JS(немного)</li>
+            <li><strong>БД:</strong> SQL(DML-запросы), PostgreSQL, SQLite</li>
+            <li><strong>Фреймворки:</strong> RoR(в процессе обученя), Flask, FastAPI, Django</li>
+            <li><strong>Front-end:</strong> HTML, CSS</li>
+            <li><strong>GIT:</strong> базовые команды, Github</li>
+            <li><strong>DevOps:</strong> Docker, Linux</li>
+          </ul>
+        </div>
       </div>
-      <div id="projects" class="six columns">
-        <h4 class="title-small">Проекты</h4>
-        <ul>
-          <li><b>MOEX_stock_views</b> <a class="link" href="https://github.com/K0Hb/MOEX_stock_views">telegram бот</a>
-            Бот для просмотра текущих котировок Мос.биржы</li>
-          <li><b>Мененджер задач</b> <a class="link" href="https://github.com/K0Hb/python-project-lvl4">web
-              приложение</a> Простой пример реализации мененджера задач(<a class="link"
-              href="https://task-manager-app-ru.herokuapp.com/">deploy</a>)</li>
-          <li><b>Avito_task</b> <a class="link" href="https://github.com/K0Hb/Avito_task">микросервис</a> Приложение для
-            работы с балансом пользователей</li>
-        </ul>
+      <div class="row-1-2">
+        <div id="projects">
+          <h4 class="title">Проекты</h4>
+          <ul>
+            <li><b>MOEX_stock_views</b> <a class="link" href="https://github.com/K0Hb/MOEX_stock_views">telegram бот</a>
+              Бот для просмотра текущих котировок Мос.биржы</li>
+            <li><b>Мененджер задач</b> <a class="link" href="https://github.com/K0Hb/python-project-lvl4">web
+                приложение</a> Простой пример реализации мененджера задач(<a class="link"
+                href="https://task-manager-app-ru.herokuapp.com/">deploy</a>)</li>
+            <li><b>Avito_task</b> <a class="link" href="https://github.com/K0Hb/Avito_task">микросервис</a> Приложение
+              для
+              работы с балансом пользователей</li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="row">
-      <div id="education" class="six columns">
-        <h4 class="title-small">Образование</h4>
-        <ul>
-          <li><a class="link" href="https://мк2.рф/">ММК2</a> факультет лечебное дело(фельдшер)</li>
-          <li><a class="link" href="https://www.sportedu.ru/">РГУФК</a> факультет реабелитологии</li>
-          <li><a class="link" href="https://ru.hexlet.io">Hexlet</a> python разработчик</li>
-          <li><a class="link" href="https://goodprogrammer.ru/">Хороший программист</a> RoR разработчик(в процессе)</li>
-        </ul>
+      <div class="row-1-2">
+        <div id="education">
+          <h4 class="title">Образование</h4>
+          <ul>
+            <li><a class="link" href="https://мк2.рф/">ММК2</a> факультет лечебное дело(фельдшер)</li>
+            <li><a class="link" href="https://www.sportedu.ru/">РГУФК</a> факультет реабелитологии</li>
+            <li><a class="link" href="https://ru.hexlet.io">Hexlet</a> python разработчик</li>
+            <li><a class="link" href="https://goodprogrammer.ru/">Хороший программист</a> RoR разработчик(в процессе)
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id="work-experience" class="six columns">
-        <h4 class="title-small">Опыт работы</h4>
-        <ul>
-          <li>Асессор поиска <a class="link" href="https://yandex.ru/">Yandex</a> (2022&ndash;по сей
-            день)<br><small>Помогаю выбирать релевантные странички для поисковика Яндекс, на тему разработки (python,
-              git, sql, linux и т.д.)</small></li>
-          <li>Зубной техник, оператор CAD/CAM, 3D-дизайнер (2012&ndash;2021)<br><small>Самозанятый. Изготовление
-              стоматологических конструкций с помощью цифровых технологий. Работал с различными ЧПУ станками и 3D
-              принтерами а так же редактировал скрипты стратегий.</small></li>
-        </ul>
+      <div class="row-1-2">
+        <div id="work-experience">
+          <h4 class="title">Опыт работы</h4>
+          <ul>
+            <li>Асессор поиска <a class="link" href="https://yandex.ru/">Yandex</a> (2022&ndash;по сей
+              день)<br><small>Помогаю выбирать релевантные странички для поисковика Яндекс, на тему разработки (python,
+                git, sql, linux и т.д.)</small></li>
+            <li>Зубной техник, оператор CAD/CAM, 3D-дизайнер (2012&ndash;2021)<br><small>Самозанятый. Изготовление
+                стоматологических конструкций с помощью цифровых технологий. Работал с различными ЧПУ станками и 3D
+                принтерами а так же редактировал скрипты стратегий.</small></li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <div class="column">
       <div id="additionally">
-        <h4 class="title-small">Дополнительно</h4>
+        <h4 class="title">Дополнительно</h4>
         <ul>
           <li><strong>Занятость:</strong> полная, частичная</li>
           <li><strong>Режим:</strong> полный рабочий день, удаленная работа</li>
@@ -107,14 +116,14 @@
         </ul>
       </div>
       <div id="languages">
-        <h4 class="title-small">Языки</h4>
+        <h4 class="title">Языки</h4>
         <ul>
           <li>Русский – родной</li>
           <li>Английский – средний уровень</li>
         </ul>
       </div>
       <div id="hobbies">
-        <h4 class="title-small">Увлечения</h4>
+        <h4 class="title">Увлечения</h4>
         <ul class="bullets">
           <li>Велоспорт, мотоспорт(кросс)</li>
         </ul>

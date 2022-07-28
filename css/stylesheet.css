@@ -7,15 +7,15 @@
   font-family: "IzhitsaRegular";
   src: url("../fonts/IzhitsaRegular/IzhitsaRegular.eot");
   src: url("../fonts/IzhitsaRegular/IzhitsaRegular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/IzhitsaRegular/IzhitsaRegular.woff") format("woff"),
-  url("../fonts/IzhitsaRegular/IzhitsaRegular.ttf") format("truetype");
+    url("../fonts/IzhitsaRegular/IzhitsaRegular.woff") format("woff"),
+    url("../fonts/IzhitsaRegular/IzhitsaRegular.ttf") format("truetype");
 }
 
 
 body {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2%;
   font-family: sans-serif;
   font-size: 16px;
   color: #404040;
@@ -23,28 +23,77 @@ body {
 }
 
 .container {
-  margin: 2em 40px;
+  font-size: 1.2em;
+  margin: 0.8%;
+  margin-bottom: 0.8%;
+}
+
+.container li {
+  list-style-position: inside;
+}
+
+.upper-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.icons-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.name {
+  font-family: 'IzhitsaRegular';
+  font-size: 2.4em;
+  margin-bottom: 2%;
+}
+
+.photo {
+  border: 1px solid #34343373;
+  max-width: 400px;
+  max-height: 400px;
+  height: auto;
+  width: 100%;
 }
 
 .title {
-  font-family: 'IzhitsaRegular';
-  font-size: 2.4em;
-  margin-bottom: .4em;
+  font-size: 1.8em;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+  color: #4d4a46;
 }
 
-.border {
-  border: 1px solid #111212;
+.block-paragraph p {
+  font-size: 0.9em;
+  margin-bottom: 1.2%;
+  margin-top: 1.2%;
 }
 
-.title-small {
-  font-size: 1.2em;
-  margin-bottom: .4em;
-}
-
-li {
-  margin-bottom: .6em;
-}
-
-a {
+.link {
   color: #33B5FF;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.row-1-2 {
+  width: 50%;
+}
+
+@media (max-width: 640px) {
+  .upper-row-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
 }
