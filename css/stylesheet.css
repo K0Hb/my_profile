@@ -86,6 +86,10 @@ body {
   width: 50%;
 }
 
+li.wrap {
+  white-space: pre-line;
+}
+
 @media (max-width: 640px) {
   .upper-row-container {
     flex-direction: column;
