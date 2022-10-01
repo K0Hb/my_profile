@@ -36,6 +36,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: start;
+  margin: 0.8%;
 }
 
 .icons-info {
@@ -100,4 +101,10 @@ li.wrap {
   .row {
     flex-direction: column;
   }
+}
+
+.block-list small {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
 }
